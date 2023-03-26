@@ -1,0 +1,76 @@
+:root{
+        // fonts
+
+    // font-family
+    --ff-main: 'Bai Jamjuree', sans-serif;
+    // font-weight
+    --fw-regular: 400;
+    --fw-bold: 600;
+
+        // colors
+
+    // primary
+    --clr-primary-400: hsl(171, 66%, 44%);
+    --clr-primary-200: hsl(171, 66%, 66%);
+    --clr-primary-tr: hsla(171, 66%, 44%, 0.3);
+    // secondary
+    --clr-secondary-400: hsl(233, 100%, 69%);
+    --clr-secondary-200: hsl(233, 100%, 77%);
+    --clr-secondary-tr: hsl(233, 100%, 69%,0.3);
+    // neutral
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(0, 0%, 95%);
+    --clr-neutral-300:  hsl(201, 11%, 66%);
+    --clr-neutral-600:  hsl(210, 10%, 33%);
+}
+
+body{
+    font-family: var(--ff-main);
+    text-align: center;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--clr-neutral-600);
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+h2{
+    font-size: 2rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1.75rem;
+    }
+}
+
+h3{
+    font-size: 1.5rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+p,a{
+    font-weight: var(--fw-regular);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+p{
+    color: var(--clr-neutral-300);
+    margin-bottom: 2.5rem;
+}
+
+a{
+    color: var(--clr-neutral-600);
+}
